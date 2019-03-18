@@ -1,0 +1,358 @@
+%%ÎÊÌâÒ»
+clear all;clc;
+[I1,map]=imread('citywall.bmp');
+i1=ind2gray(I1,map);
+imhist(i1);saveas(gcf,'zft1.bmp');
+ [I2,map]=imread('citywall1.bmp');
+i2=ind2gray(I2,map);
+imhist(i2);saveas(gcf,'zft2.bmp');
+ [I3,map]=imread('citywall2.bmp');
+i3=ind2gray(I3,map);
+imhist(i3);saveas(gcf,'zft3.bmp');
+ [I4,map]=imread('elain.bmp');
+i4=ind2gray(I4,map);
+imhist(i4);saveas(gcf,'zft4.bmp');
+ [I5,map]=imread('elain1.bmp');
+i5=ind2gray(I5,map);
+imhist(i5);saveas(gcf,'zft5.bmp');
+ [I6,map]=imread('elain2.bmp');
+i6=ind2gray(I6,map);
+imhist(i6);saveas(gcf,'zft6.bmp');
+ [I7,map]=imread('elain3.bmp');
+i7=ind2gray(I7,map);
+imhist(i7);saveas(gcf,'zft7.bmp');
+ [I8,map]=imread('lena.bmp');
+i8=ind2gray(I8,map);
+imhist(i8);saveas(gcf,'zft8.bmp');
+ [I9,map]=imread('lena1.bmp');
+i9=ind2gray(I9,map);
+imhist(i9);saveas(gcf,'zft9.bmp');
+ [I10,map]=imread('lena2.bmp');
+i10=ind2gray(I10,map);
+imhist(i10);saveas(gcf,'zft10.bmp');
+ [I11,map]=imread('lena4.bmp');
+i11=ind2gray(I11,map);
+imhist(i11);saveas(gcf,'zft11.bmp');
+ [I12,map]=imread('woman.bmp');
+i12=ind2gray(I12,map);
+imhist(i12);saveas(gcf,'zft12.bmp');
+ [I13,map]=imread('woman1.bmp');
+i13=ind2gray(I13,map);
+imhist(i13);saveas(gcf,'zft13.bmp');
+ [I14,map]=imread('woman2.bmp');
+i14=ind2gray(I14,map);
+imhist(i14);saveas(gcf,'zft14.bmp');
+
+
+%%ÎÊÌâ2
+clear all;clc;
+[I1,map]=imread('citywall.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db1.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('citywall1.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db2.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('citywall2.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db3.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('elain.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db4.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('elain1.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db5.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('elain2.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db6.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('elain3.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db7.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('lena.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db8.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('lena1.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db9.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('lena2.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db10.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('lena4.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db11.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('woman.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db12.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('woman1.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db13.bmp');%´¢´æÍ¼Ïñ
+
+clear all;clc;
+[I1,map]=imread('woman2.bmp');
+i1=ind2gray(I1,map);
+subplot(2,2,1);imshow(i1);
+subplot(2,2,2);imshow(histeq(i1));
+subplot(2,2,3);imhist(i1);
+subplot(2,2,4);imhist(histeq(i1));
+saveas(gcf,'db14.bmp');%´¢´æÍ¼Ïñ
+
+%%ÎÊÌâ3
+ clear all;clc;
+[I,map]=imread('citywall.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('citywall1.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp1.bmp');
+%figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóÍ¼ÏñµÄÖ±·½Í¼
+%subplot(3,1,1),imhist(I,64);title('Ô­Í¼ÏñÖ±·½Í¼');
+%subplot(3,1,2),imhist(Imatch,64);title('Æ¥ÅäÍ¼ÏñÍ¼ÏñÖ±·½Í¼');
+%subplot(3,1,3),imhist(Iout,64);title('Æ¥ÅäÖ®ºóÍ¼ÏñÖ±·½Í¼');
+ clear all;clc;
+[I,map]=imread('citywall.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('citywall2.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp2.bmp');
+ clear all;clc;
+[I,map]=imread('elain.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('elain1.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp3.bmp');
+
+ clear all;clc;
+[I,map]=imread('elain.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('elain2.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp4.bmp');
+
+ clear all;clc;
+[I,map]=imread('elain.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('elain3.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp5.bmp');
+
+[I,map]=imread('lena.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('lena1.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp6.bmp');
+
+[I,map]=imread('lena.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('lena2.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp7.bmp');
+
+ clear all;clc;
+[I,map]=imread('lena.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('lena4.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp8.bmp');
+
+ clear all;clc;
+[I,map]=imread('woman.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('woman1.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp9.bmp');
+
+ clear all;clc;
+[I,map]=imread('woman.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('woman2.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp10.bmp');
+
+ clear all;clc;
+[I,map]=imread('elain.bmp');
+Imatch=ind2gray(I,map);
+[I1,map]=imread('lena2.bmp');
+I=ind2gray(I1,map);
+Jmatch=imhist(Imatch);%»ñÈ¡Æ¥ÅäÍ¼ÏñÖ±·½Í¼
+Iout=histeq(I,Jmatch);%Ö±·½Í¼Æ¥Åä
+figure;%ÏÔÊ¾Ô­Í¼Ïñ¡¢Æ¥ÅäÍ¼ÏñºÍÆ¥ÅäºóµÄÍ¼Ïñ
+subplot(1,3,1),imshow(I);title('Í¼Ïñ');
+subplot(1,3,2),imshow(Imatch);title('Æ¥ÅäÍ¼Ïñ');
+subplot(1,3,3),imshow(Iout);title('Æ¥ÅäºóÍ¼Ïñ');
+saveas(gcf,'pp12.png');
+
+%%ÎÊÌâ4
+ clear all;clc;
+[I,map]=imread('elain.bmp');
+i=ind2gray(I,map);
+i1=adapthisteq(i,'NumTiles',[7 7])
+figure;
+subplot(2,2,1);imshow(i);title('Í¼Ïñ');
+subplot(2,2,2);imshow(i1);title('¾Ö²¿ÔöÇ¿ºó');
+subplot(2,2,3);imhist(i);
+subplot(2,2,4);imhist(i1);
+saveas(gcf,'jb1.png');
+
+ clear all;clc;
+[I,map]=imread('lena.bmp');
+i=ind2gray(I,map);
+i1=adapthisteq(i,'NumTiles',[7 7])
+figure;
+subplot(2,2,1);imshow(i);title('Í¼Ïñ');
+subplot(2,2,2);imshow(i1);title('¾Ö²¿ÔöÇ¿ºó');
+subplot(2,2,3);imhist(i);
+subplot(2,2,4);imhist(i1);
+saveas(gcf,'jb2.png');
+
+
+%%ÎÊÌâ5
+  clear all;clc;
+[I,map]=imread('elain.bmp');
+i=ind2gray(I,map);
+thresh=graythresh(i);%ãĞÖµ
+i1=im2bw(i,thresh);%¶şÖµ»¯
+subplot(1,2,1),imshow(i);title('Í¼Ïñ');
+subplot(1,2,2),imshow(i1);title('·Ö¸îºóÍ¼Ïñ');
+saveas(gcf,'fg1.png');
+clear all;clc;
+[I,map]=imread('woman.bmp');
+i=ind2gray(I,map);
+thresh=graythresh(i);%ãĞÖµ
+i1=im2bw(i,thresh);%¶şÖµ»¯
+subplot(1,2,1),imshow(i);title('Í¼Ïñ');
+subplot(1,2,2),imshow(i1);title('·Ö¸îºóÍ¼Ïñ');
+saveas(gcf,'fg2.png');
